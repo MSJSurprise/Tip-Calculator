@@ -34,7 +34,7 @@
         android:id="@+id/text_tip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
         android:text="Tip"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -77,6 +77,17 @@
         app:layout_constraintTop_toTopOf="@id/text_tip_percentage" />
 
     <TextView
+        android:id="@+id/text_tip_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@+id/seek_bar_tip_percentage"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/seek_bar_tip_percentage"
+        app:layout_constraintEnd_toEndOf="@+id/seek_bar_tip_percentage"
+        tools:text="good" />
+
+    <TextView
         android:id="@+id/text_tip_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -98,6 +109,22 @@
         app:layout_constraintBottom_toBottomOf="@id/text_total"
         app:layout_constraintStart_toEndOf="@id/text_total"
         tools:text="24.99" />
+
+<!--    Footer View-->
+    <TextView
+        android:id="@+id/text_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Made with ❤️ by MSJ"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
