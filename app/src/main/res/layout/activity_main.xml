@@ -13,7 +13,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:text="Base"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="24%"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/text_base"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Tip"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@id/text_base"
         app:layout_constraintTop_toBottomOf="@+id/text_tip_percentage" />
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Total"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="18sp"
 
         app:layout_constraintEnd_toEndOf="@id/text_base"
