@@ -78,13 +78,12 @@ class MainActivity : AppCompatActivity() {
     private fun tipDescription(tipProgress: Int) {
         val tipDesc: TextView = findViewById(R.id.text_tip_description)
         val seekBarTip: SeekBar = findViewById(R.id.seek_bar_tip_percentage)
-        val updateTipDescription: String
-        when (tipProgress) {
-            in 0..9 -> updateTipDescription = "Poor"
-            in 10..14 -> updateTipDescription = "Acceptable"
-            in 15..19 -> updateTipDescription = "Good"
-            in 20..24 -> updateTipDescription = "Great"
-            else -> updateTipDescription = "Amazing"
+        val updateTipDescription: String = when (tipProgress) {
+            in 0..9 -> "Poor"
+            in 10..14 -> "Acceptable"
+            in 15..19 -> "Good"
+            in 20..24 -> "Great"
+            else -> "Amazing"
         }
         tipDesc.text = updateTipDescription
         val color = ArgbEvaluator().evaluate(tipProgress.toFloat() / seekBarTip.max,
