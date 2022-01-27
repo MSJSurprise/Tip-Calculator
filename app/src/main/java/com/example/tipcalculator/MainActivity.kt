@@ -68,10 +68,10 @@ class MainActivity : AppCompatActivity() {
         val baseAmount = editBaseText.text.toString().toDouble()
         val tip = seekBarTip.progress
         val tipTotal = baseAmount * tip / 100
-        tipAmount.text = "%.2f".format(tipTotal)
+        tipAmount.text = "$${"%.2f".format(tipTotal)}"
 
         val allTotal = baseAmount + tipTotal
-        total.text = "%.2f".format(allTotal)
+        total.text = "$${"%.2f".format(allTotal)}"
 
     }
 
